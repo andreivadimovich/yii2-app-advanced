@@ -77,7 +77,7 @@ CREATE TABLE `test_file_list` (
 ) 
 ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
 ```
-
+<hr />
 
 #thoughts
 
