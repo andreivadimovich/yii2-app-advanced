@@ -8,12 +8,12 @@ Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / Composer / YII2-advanced
 
 <h3>List of supported HTTP methods</h3>
 
-1) Upload file and create record
+<b>1)</b> Upload file and create record
 <pre>
 POST http://localhost/v1/file-lists
 </pre>
 
-2) Update file content and set file name
+<b>2)</b> Update file content and set file name
 <pre>
 PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_
 </pre>
@@ -24,18 +24,18 @@ Example request in httpie utility
 http PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_ < '/file/path'
 </pre>
 
-3) Download content of one file (by id):
+<b>3)</b> Download content of one file (by id):
 <pre>
 GET http://localhost/v1/file-lists/_ID_ (file_list.id)
 </pre>
 
-4) Options. Get simple meta data of the selected file. Date of file creation /changes, etc
+<b>4)</b> Options. Get simple meta data of the selected file. Date of file creation /changes, etc
 (http://php.net/manual/ru/function.stat.php)
 <pre>
 OPTIONS http://l/v1/file-lists/_ID_
 </pre>
 
-5) The file list
+<b>5)</b> The file list
 <pre>
 GET http://localhost/v1/file-lists
 </pre>
