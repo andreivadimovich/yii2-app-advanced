@@ -16,7 +16,7 @@ POST http://localhost/v1/file-lists
 <pre>
 PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_
 </pre>
-The file contents is in the body. The file name is a GET parameter.
+The file contents is in the body. The file name is a contained in GET parameter.
 
 Example of the request in httpie utility
 <pre>
