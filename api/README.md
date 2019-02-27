@@ -31,7 +31,7 @@ GET http://localhost/v1/file-lists/_ID_ (file_list.id)
 <b>4)</b> Options. Get simple meta data of the selected file. File creation date /changes, etc
 (http://php.net/manual/ru/function.stat.php)
 <pre>
-OPTIONS http://l/v1/file-lists/_ID_
+OPTIONS http://localhost/v1/file-lists/_ID_
 </pre>
 
 <b>5)</b> The file list
@@ -54,6 +54,8 @@ GET http://localhost/v1/file-lists
 4) /path/to/yii2_project php migrate up (if it doesn’t work – the data base dump is provided below in this document) 
 
 5) create directory /api/web/file_list (777 recursive)
+
+6) create file /api/runtime/logs/rest.log
 ```
 
 SQL dump:
