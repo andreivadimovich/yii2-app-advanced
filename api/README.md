@@ -5,30 +5,30 @@
 <h3>System requirements</h3>
 Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / <a href="https://getcomposer.org/download">Composer</a> / <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced</a>
 
-<h3>List of supported HTTP methods</h3>
+<h3>List of the supported HTTP methods</h3>
 
-<b>1)</b> Upload file and create record
+<b>1)</b> the file and make record in table
 <pre>
 POST http://localhost/v1/file-lists
 </pre>
 
-<b>2)</b> Update file content and set file name
+<b>2)</b> Update the file contents and assign a name to the file
 <pre>
 PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_
 </pre>
-The file content is in body. File name is a GET parameter.
+The file contents is in the body. The file name is a GET parameter.
 
-Example request in httpie utility
+Example of the request in httpie utility
 <pre>
 http PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_ < '/file/path'
 </pre>
 
-<b>3)</b> Download content of one file (by id):
+<b>3)</b> Download contents of one file (by id):
 <pre>
 GET http://localhost/v1/file-lists/_ID_ (file_list.id)
 </pre>
 
-<b>4)</b> Options. Get simple meta data of the selected file. Date of file creation /changes, etc
+<b>4)</b> Options. Get simple meta data of the selected file. File creation date /changes, etc
 (http://php.net/manual/ru/function.stat.php)
 <pre>
 OPTIONS http://l/v1/file-lists/_ID_
@@ -51,7 +51,7 @@ GET http://localhost/v1/file-lists
 
 3) set up a database connection /common/config/main-local.php 
 
-4) /path/to/yii2_project php migrate up (if not work - data base dump there is in this document below) 
+4) /path/to/yii2_project php migrate up (if it doesn’t work – the data base dump is provided below in this document) 
 
 5) create directory /api/web/file_list (777 recursive)
 ```
