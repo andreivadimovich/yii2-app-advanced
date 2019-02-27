@@ -7,7 +7,7 @@ Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / <a href="https://getcomposer.o
 
 <h3>List of the supported HTTP methods</h3>
 
-<b>1)</b> the file and make record in table
+<b>1)</b> Upload the file and make record in table
 <pre>
 POST http://localhost/v1/file-lists
 </pre>
