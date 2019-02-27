@@ -85,13 +85,13 @@ ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
 
 In my opinion the following items are important (in order of priority): 
 
-0) Customize Vagrant / Docker / Chef / Puppet with the app;
-1) Refactor the code. Distribute everything in the controller in separate files (so that if something accidentally breaks in one place the program won't break completely);
-2) Generate random names for the uploaded files;
-3) Create the date change field in the file_list table;
-4) Implement RBAC in order to give users their own file space; 
-5) Work on optimizing upload / download files; 
-6) Use exif php extension to get extended file details.
+0) Customize Vagrant / Docker / Chef / Puppet with the app
+1) Refactor the code. Distribute everything in the controller in separate files (so that if something accidentally breaks in one place the program won't break completely)
+2) Generate random names for the uploaded files
+3) Create the date change field in the file_list table
+4) Implement RBAC in order to give users their own file space
+5) Work on optimizing upload / download files
+6) Use exif php extension to get extended file details
 7) After adding the necessary functionality - until release. Solve web security issues.
 
 
