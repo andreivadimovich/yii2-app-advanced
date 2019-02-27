@@ -2,10 +2,11 @@
 
 Create, upload / download / list / update / info
    
-System requirements
+<h3>System requirements</h3>
 Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / Composer / YII2-advanced 
 
-List of supported methods HTTP methods:
+
+<h3>List of supported methods HTTP methods</h3>
 
 1) Upload file and create record
 - POST http://localhost/v1/file-lists
