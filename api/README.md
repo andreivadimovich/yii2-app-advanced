@@ -10,26 +10,35 @@ Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / Composer / YII2-advanced
 
 1) Upload file and create record
 <pre>
-	POST http://localhost/v1/file-lists
+POST http://localhost/v1/file-lists
 </pre>
 
 2) Update file content and set file name
-- PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_
-    
+<pre>
+PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_
+</pre>
 The file content is in body. Value of the file name variable in GET.
 
 Example requset in httpie
- - http PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_ < '/file/path'
+<pre>
+http PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_ < '/file/path'
+</pre>
 
 3) Download content of one file (by id):
-- GET http://localhost/v1/file-lists/_ID_ (file_list.id)
+<pre>
+GET http://localhost/v1/file-lists/_ID_ (file_list.id)
+</pre>
 
 4) Options. Get simple meta data of the selected file. Date of file creation /changes, etc
 (http://php.net/manual/ru/function.stat.php)
-- OPTIONS http://l/v1/file-lists/_ID_
+<pre>
+OPTIONS http://l/v1/file-lists/_ID_
+</pre>
 
 5) The file list
-- GET http://localhost/v1/file-lists
+<pre>
+GET http://localhost/v1/file-lists
+</pre>
 
 
 ```
