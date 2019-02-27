@@ -46,7 +46,6 @@ GET http://localhost/v1/file-lists
 0) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
 
 1) php composer.phar update 
-https://getcomposer.org/download
 
 2) /path/to/yii2_project php init 
 
