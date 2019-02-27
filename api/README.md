@@ -52,7 +52,7 @@ GET http://localhost/v1/file-lists
 3) set up a database connection /common/config/main-local.php 
 
 4) /path/to/yii2_project php migrate up (if it doesn’t work – the data base dump is provided below in this document) 
-<i>the migration files are in <u>/console/migrations</u></i>
+the migration files are in /console/migrations
 
 5) create directory /api/web/file_list (777 recursive)
 
