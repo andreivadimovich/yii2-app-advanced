@@ -17,9 +17,9 @@ POST http://localhost/v1/file-lists
 <pre>
 PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_
 </pre>
-The file content is in body. Value of the file name variable in GET.
+The file content is in body. File name is a GET parameter.
 
-Example requset in httpie
+Example request in httpie utility
 <pre>
 http PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_ < '/file/path'
 </pre>
@@ -41,8 +41,8 @@ GET http://localhost/v1/file-lists
 </pre>
 
 
+<h2>INSTALL</h2>
 ```
-INSTALL:
 0) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
 
 1) php composer.phar update 
