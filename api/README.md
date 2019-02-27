@@ -1,6 +1,6 @@
 <h1>REST API for working with file system</h1>
 
-Create, upload / download / list / update / info
+<a href="https://github.com/andreivadimovich/yii2-app-advanced/blob/master/api/README.md#install">Install</a>
    
 <h3>System requirements</h3>
 Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / <a href="https://getcomposer.org/download">Composer</a> / <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced</a>
