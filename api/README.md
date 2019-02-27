@@ -9,7 +9,9 @@ Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / Composer / YII2-advanced
 <h3>List of supported HTTP methods</h3>
 
 1) Upload file and create record
-- POST http://localhost/v1/file-lists
+<pre>
+	POST http://localhost/v1/file-lists
+</pre>
 
 2) Update file content and set file name
 - PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_
