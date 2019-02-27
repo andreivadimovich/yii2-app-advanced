@@ -3,7 +3,7 @@ REST API for working with file system
 Create, upload / download / list / update / info
    
 System requirements
-Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / Composer / YII2-advanced
+Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / Composer / YII2-advanced 
 Detail info - https://www.yiiframework.com/doc/guide/2.0/en/start-installation.
 
 After installation go to the [http://localhost/web/requirements.php](http://localhost/web/requirements.php).
@@ -31,3 +31,9 @@ Example requset in httpie
 
 5) The file list
 - GET http://localhost/v1/file-lists
+
+
+INSTALL:
+1) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
+
+
