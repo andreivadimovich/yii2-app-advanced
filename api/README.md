@@ -67,7 +67,7 @@ CREATE TABLE `file_list` (
 ) 
 ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
 
-# for teset
+# for test
 CREATE TABLE `test_file_list` (
 	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT, 
 	`name` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL , 
