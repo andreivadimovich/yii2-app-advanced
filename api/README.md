@@ -3,8 +3,7 @@
 Create, upload / download / list / update / info
    
 <h3>System requirements</h3>
-Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / Composer / YII2-advanced 
-
+Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / <a href="https://getcomposer.org/download">Composer</a> / <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced</a>
 
 <h3>List of supported HTTP methods</h3>
 
