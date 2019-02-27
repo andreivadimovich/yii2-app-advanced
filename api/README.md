@@ -79,7 +79,7 @@ ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
 ```
 <hr />
 
-<i>#thoughts</i>
+<i><h5>#thoughts</h5></i>
 
 In my opinion the following items are important (in order of priority): 
 
