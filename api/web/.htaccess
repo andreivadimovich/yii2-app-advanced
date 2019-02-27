@@ -1,0 +1,13 @@
+Order Allow,Deny
+Allow from all
+Options -Indexes
+
+AddDefaultCharset utf-8
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
+
+# remove slashes from url
+# RewriteCond %{THE_REQUEST} \s/+(.+?)/+[?\s]
+# RewriteRule /$ /%1 [R,L]
