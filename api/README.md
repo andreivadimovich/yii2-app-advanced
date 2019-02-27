@@ -1,12 +1,9 @@
-REST API for working with file system
+<h1>REST API for working with file system</h1>
 
 Create, upload / download / list / update / info
    
 System requirements
 Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / Composer / YII2-advanced 
-Detail info - https://www.yiiframework.com/doc/guide/2.0/en/start-installation.
-
-After installation go to the [http://localhost/web/requirements.php](http://localhost/web/requirements.php).
 
 List of supported methods HTTP methods:
 
