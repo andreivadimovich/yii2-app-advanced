@@ -33,7 +33,7 @@ Example requset in httpie
 - GET http://localhost/v1/file-lists
 
 
-
+```
 INSTALL:
 0) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
 
@@ -47,7 +47,7 @@ https://getcomposer.org/download
 4) php migrate up (if not work - data base dump there is in this document below) 
 
 5) create directory /api/web/file_list (777 recursive)
-
+```
 
 SQL dump:
 CREATE TABLE `file_list` (
