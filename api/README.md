@@ -13,7 +13,6 @@ List of supported methods HTTP methods:
 1) Upload file and create record
 - POST http://localhost/v1/file-lists
 
-
 2) Update file content and set file name
 - PUT http://localhost/v1/file-lists/_ID_?name=_FILE_NAME_
     
@@ -50,6 +49,7 @@ https://getcomposer.org/download
 ```
 
 SQL dump:
+```
 CREATE TABLE `file_list` (
 	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT, 
 	`name` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL , 
@@ -58,7 +58,7 @@ CREATE TABLE `file_list` (
 	PRIMARY KEY (id)
 ) 
 ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
-
+```
 
 
 
