@@ -80,7 +80,9 @@ ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
 
 
 #thoughts
+
 In my opinion the following items are important (in order of priority): 
+
 0) Customize Vagrant / Docker / Chef / Puppet with the app;
 1) Refactor the code. Distribute everything in the controller in separate files (so that if something accidentally breaks in one place the program doesn't break completely);
 2) Generate random names for the uploaded files;
