@@ -48,11 +48,11 @@ GET http://localhost/v1/file-lists
 1) php composer.phar update 
 https://getcomposer.org/download
 
-2) php init 
+2) /path/to/yii2_project php init 
 
 3) set up a database connection /common/config/main-local.php 
 
-4) php migrate up (if not work - data base dump there is in this document below) 
+4) /path/to/yii2_project php migrate up (if not work - data base dump there is in this document below) 
 
 5) create directory /api/web/file_list (777 recursive)
 ```
