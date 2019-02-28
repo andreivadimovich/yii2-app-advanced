@@ -124,7 +124,7 @@ After
 
 3
 <pre>
-./vendor/bin/codecept run
+./vendor/bin/codecept run api
 </pre>
 
 
