@@ -2,7 +2,7 @@
 
 <br />
 <h4><a href="#install-1">Install</a></h4>
-<h4><a href="#code-testing-1">Testing</a></h4>
+<h4><a href="#code-testing">Testing</a></h4>
 
 <h5>
 <a href="#thoughts-1">#thoughts</a>
