@@ -4,9 +4,9 @@
 <h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#install-1">Install</a></h4>
 <h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#running-the-tests-1">Running the tests</a></h4>
 
-<h3>
+<h5>
 <a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#thoughts-1">#thoughts</a>
-</h3>
+</h5>
 <br />
 
 <h3>Requirements</h3>
