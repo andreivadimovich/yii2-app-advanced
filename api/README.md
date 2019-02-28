@@ -109,18 +109,18 @@ After
 /project/path php migrate up
 </pre>
 
-1) is called once upon initialization
+1 is called once upon initialization
 <pre>
 ./vendor/bin/codecept bootstrap
 </pre>
 
 
-2)
+2
 <pre>
 ./vendor/bin/codecept build
 </pre>
 
-3) 
+3
 <pre>
 ./vendor/bin/codecept run
 </pre>
