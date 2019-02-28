@@ -101,9 +101,9 @@ ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
 ```
 
 <br />
-<h3>Testing</h3>
+<h3>Code testing</h3>
 
-Codeception - acceptance type.<br />
+<a href="https://codeception.com/">Codeception</a> - acceptance type.<br />
 Configurate the file <u>/common/config/test.php</u>
 <pre>
 <?php
