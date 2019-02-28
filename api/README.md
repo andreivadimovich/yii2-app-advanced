@@ -102,6 +102,6 @@ In my opinion the following items are important (in order of priority):
 4) Implement RBAC in order to give users their own file space
 5) Work on optimizing upload / download files
 6) Use exif php extension to get extended file details
-7) After adding the necessary functionality - until release. Solve web security issues.
+7) Solve web security issues (after adding the necessary functionality - until release).
 
 
