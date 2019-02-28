@@ -89,6 +89,35 @@ CREATE TABLE `test_file_list` (
 ) 
 ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
 ```
+
+<h3>Running the tests</h3>
+
+Codeception - acceptance type.
+Configurate the file /common/config/test-local.php (install test database). 
+
+After 
+<pre>
+/project/path php migrate up
+</pre>
+
+1) is called once upon initialization
+<pre>
+./vendor/bin/codecept bootstrap
+</pre>
+
+
+2) 
+<pre>
+./vendor/bin/codecept build
+</pre>
+
+3) 
+<pre>
+./vendor/bin/codecept run
+</pre>
+
+
+
 <hr />
 
 <i><h5>#thoughts</h5></i>
