@@ -78,6 +78,7 @@ the migration files are in /console/migrations
 
 <br />
 SQL dump:
+
 ```
 CREATE TABLE `file_list` (
 	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT, 
@@ -98,6 +99,7 @@ CREATE TABLE `test_file_list` (
 ) 
 ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
 ```
+
 <br />
 <h3>Running the tests</h3>
 
