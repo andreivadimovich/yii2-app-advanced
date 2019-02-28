@@ -12,7 +12,7 @@
 <h3>Requirements</h3>
 Apache(ngnix) , MySQL >= 5.6 , PHP >= 5.6 , GIT , <a href="https://getcomposer.org/download">Composer</a> , <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced</a> , <a href="http://guzzlephp.org/">guzzlehttp</a>
 
-<br />
+<br /><br />
 <h3>List of the supported HTTP methods</h3>
 
 <b>1)</b> Upload the file and make record in table
