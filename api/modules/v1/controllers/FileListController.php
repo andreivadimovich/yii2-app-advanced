@@ -77,8 +77,6 @@ class FileListController extends ActiveController
      */
     public function actionCreate()
     {
-        \Yii::$app->request->enableCsrfValidation = false;
-
         $model = new UploadForm();
         $model->uploadFile = UploadedFile::getInstance($model, 'uploadFile');
         if ($model->upload()) {
@@ -96,13 +94,17 @@ class FileListController extends ActiveController
                 $info = 'File exist. Try other name';
                 Yii::info((string)__METHOD__." ".$info, 'notifi');
             } else {
-                $info = 'Success. File is uploaded. File URL is http://site/api/v1/file-lists/'.$last_insert_id;
+                $info = 'Success. File is uploaded. File URL is http://'.$_SERVER['SERVER_NAME'].'/v1/file-lists/'.$last_insert_id;
             }
 
             return Yii::t('app', $info);
 
         } else {
-            $ers = $model->getErrors()['uploadFile']['0'];
+            $ers = '';
+            if ($model->getErrors()) {
+                $ers = $model->getErrors()['uploadFile']['0'];
+            }
+
             Yii::info((string)__METHOD__." ".$ers, 'notifi');
             throw new ServerErrorHttpException(
                 Yii::t('app', 'The file could not be created. Please try again later'), 404);
@@ -143,7 +145,9 @@ class FileListController extends ActiveController
     public function actionUpdate()
     {
         try {
-            \Yii::$app->request->enableCsrfValidation = false;
+            if (!Yii::$app->request || !Yii::$app->request->get()) {
+                throw new ServerErrorHttpException('Update Error. Try again. Set the file ID');
+            }
 
             $get = Yii::$app->request->get();
             if (isset($get['name'])) {

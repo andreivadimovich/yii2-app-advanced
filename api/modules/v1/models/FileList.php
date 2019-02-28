@@ -103,12 +103,7 @@ class FileList extends \yii\db\ActiveRecord
             }
         }
 
-        $list = $records->select(self::SELECTED_TABLE_FIELDS)->all();
-        if (isset($files_db) && !empty($files_db)) {
-            $list = $files_db;
-        }
-
-        return $list ? $list : Yii::t('app', 'Directory is empty now...');
+        return isset($files_db) && !empty($files_db) ? $files_db : Yii::t('app', 'Directory is empty now...');
     }
 
 
