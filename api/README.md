@@ -1,11 +1,11 @@
 <h1>REST API for working with file system</h1>
 
 <br />
-<h4><a href="/README.md#install-1">Install</a></h4>
-<h4><a href="/README.md#running-the-tests-1">Running the tests</a></h4>
+<h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#install-1">Install</a></h4>
+<h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#running-the-tests-1">Running the tests</a></h4>
 
 <h3>
-<a href="/README.md#thoughts-1">#thoughts</a>
+<a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#thoughts-1">#thoughts</a>
 </h3>
 <br />
 
