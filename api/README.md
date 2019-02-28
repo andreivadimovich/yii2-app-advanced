@@ -50,10 +50,12 @@ GET http://localhost/v1/file-lists
 <br />
 <h2>INSTALL</h2>
 
-```
 Install Composer 
+```
 curl -sS https://getcomposer.org/installer | php
+```
 
+```
 1) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
 
 2) add line 
