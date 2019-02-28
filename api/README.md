@@ -3,7 +3,7 @@
 <h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/blob/master/api/README.md#install-1">Install</a></h4>
    
 <h3>Requirements</h3>
-Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / <a href="https://getcomposer.org/download">Composer</a> / <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced</a>
+Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / <a href="https://getcomposer.org/download">Composer</a> / <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced (+ guzzlehttp/guzzle)</a>
 
 <h3>List of the supported HTTP methods</h3>
 
@@ -43,20 +43,31 @@ GET http://localhost/v1/file-lists
 <h2>INSTALL</h2>
 
 ```
-0) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
+Install Composer 
+<pre>
+curl -sS https://getcomposer.org/installer | php
+</pre>
 
-1) php composer.phar update 
+1) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
 
-2) /path/to/yii2_project php init 
+2) add line 
+<pre>
+"guzzlehttp/guzzle": "^6.2"
+</pre>
+to your /project/path/composer.json 
 
-3) set up a database connection /common/config/main-local.php 
+3) /project/path  php composer.phar update 
 
-4) /path/to/yii2_project php migrate up (if it doesn’t work – the data base dump is provided below in this document) 
+4) /project/path php init 
+
+5) set up a database connection /common/config/main-local.php 
+
+6) /project/path php migrate up (if it doesn’t work – the data base dump is provided below in this document) 
 the migration files are in /console/migrations
 
-5) create directory /api/web/file_list (777 recursive)
+7) create directory /api/web/file_list (chmod 777 to a folder and all contents)
 
-6) create file /api/runtime/logs/rest.log
+8) create file /api/runtime/logs/rest.log
 ```
 
 SQL dump:
