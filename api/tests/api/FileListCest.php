@@ -5,7 +5,6 @@ namespace api\tests\api;
 use \api\tests\ApiTester;
 use common\fixtures\FileListFixture;
 use yii\db\Exception;
-use api\modules\v1\models\FileList;
 
 class FileListCest
 {
