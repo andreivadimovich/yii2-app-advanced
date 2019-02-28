@@ -11,6 +11,7 @@ use yii\filters\AccessControl;
 
 use api\modules\v1\models\FileList;
 use api\modules\v1\models\UploadForm;
+use yii\web\ServerErrorHttpException;
 
 class FileListController extends ActiveController
 {
