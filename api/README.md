@@ -4,9 +4,9 @@
 <h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/blob/master/api/README.md#install-1">Install</a></h4>
 <h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#running-the-tests">Running the tests</a></h4>
 
-<h4>
-<a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#thoughts">Running the tests</a>
-</h4>
+<h3>
+<a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#thoughts">#thoughts</a>
+</h3>
 <br />
 
 <h3>Requirements</h3>
