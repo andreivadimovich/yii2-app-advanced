@@ -8,7 +8,8 @@ end
 
 domains = {
   frontend: 'y2aa-frontend.test',
-  backend:  'y2aa-backend.test'
+  backend:  'y2aa-backend.test',
+  api:  'y2aa-api.test'
 }
 
 config = {

@@ -18,8 +18,7 @@ class FileListCest
                 ],
             ]);
         } catch (Exception $e) {
-            print_r($e->getMessage());
-            die();
+            return $e->getMessage();
         }
     }
 
