@@ -5,6 +5,7 @@ namespace api\tests\api;
 use \api\tests\ApiTester;
 use common\fixtures\FileListFixture;
 use yii\db\Exception;
+use api\modules\v1\models\FileList;
 
 class FileListCest
 {
@@ -26,10 +27,18 @@ class FileListCest
     {
         $I->sendGET('/v1/file-lists');
         $I->seeResponseCodeIs(200);
-        $I->seeResponseContainsJson([
-            ['title' => 'First Post'],
-            ['title' => '2222 Second Post'],
-        ]);
+        $I->seeResponseContainsJson();
         $I->seeHttpHeader('X-Pagination-Total-Count', 3);
+    }
+
+    public function view(ApiTester $I)
+    {
+        $I->sendGET('/v1/file-lists/0');
+
+        $I->sendGET('/v1/file-lists/2');
+        $I->seeResponseCodeIs(200);
+        $I->seeResponseContainsJson();
+
+        $I->seeHttpHeader('X-Pagination-Total-Count', 2);
     }
 }
