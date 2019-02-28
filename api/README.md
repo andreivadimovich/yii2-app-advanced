@@ -103,7 +103,7 @@ ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
 <br />
 <h3>Running the tests</h3>
 
-Codeception - acceptance type.
+Codeception - acceptance type.<br />
 Configurate the file /common/config/test-local.php (install test database). 
 
 After 
