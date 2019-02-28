@@ -52,9 +52,7 @@ GET http://localhost/v1/file-lists
 
 ```
 Install Composer 
-<pre>
 curl -sS https://getcomposer.org/installer | php
-</pre>
 
 1) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
 
