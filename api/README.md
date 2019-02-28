@@ -2,7 +2,7 @@
 
 <br />
 <h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#install-1">Install</a></h4>
-<h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#running-the-tests-1">Running the tests</a></h4>
+<h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#testing-1">Testing</a></h4>
 
 <h5>
 <a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#thoughts-1">#thoughts</a>
@@ -101,10 +101,27 @@ ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
 ```
 
 <br />
-<h3>Running the tests</h3>
+<h3>Testing</h3>
 
 Codeception - acceptance type.<br />
-Configurate the file /common/config/test-local.php (install test database). 
+Configurate the file <u>/common/config/test.php</u>
+<pre>
+<?php
+return [
+    'id' => 'app-api',
+    'basePath' => dirname(__DIR__),
+
+    'components' => [
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=127.0.0.1;dbname=http_files_test',
+            'username' => '',
+            'password' => '',
+            'charset' => 'utf8',
+        ],
+    ],
+];
+</pre>
 
 After 
 <pre>
