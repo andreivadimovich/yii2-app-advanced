@@ -3,9 +3,9 @@
 namespace api\modules\v1\models;
 
 use Yii;
-use yii\base\NotSupportedException;
 use yii\base\Model;
 use yii\web\UploadedFile;
+use api\modules\v1\models\FileList;
 
 class UploadForm extends Model
 {
@@ -29,6 +29,7 @@ class UploadForm extends Model
     }
 
     /**
+     * @param $file_name bool
      * @return bool
      */
     public function upload($file_name = false)
@@ -48,7 +49,7 @@ class UploadForm extends Model
                     $file_name = $this->uploadFile->baseName . '.' . $this->uploadFile->extension;
                 }
 
-                $this->uploadFile->saveAs(\api\modules\v1\models\FileList::getAbsolutePath() . $file_name);
+                $this->uploadFile->saveAs(FileList::getAbsolutePath() . $file_name);
             }
 
             return true;

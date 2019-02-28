@@ -1,13 +1,9 @@
 <?php
 
-
 namespace api\modules\v1\models;
 
-use api\modules\v1\controllers\FileListController;
 use Yii;
-use yii\base\NotSupportedException;
 use yii\web\ServerErrorHttpException;
-use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\db\Exception;
 

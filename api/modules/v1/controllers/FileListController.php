@@ -12,7 +12,6 @@ use yii\filters\AccessControl;
 use api\modules\v1\models\FileList;
 use api\modules\v1\models\UploadForm;
 
-
 class FileListController extends ActiveController
 {
     public $modelClass = '\api\modules\v1\models\FileList';

@@ -1,15 +1,15 @@
 <?php
 return [
-    'id' => 'app-api-tests',
+    'id' => 'app-api',
+    'basePath' => dirname(__DIR__),
+
     'components' => [
-        'assetManager' => [
-            'basePath' => __DIR__ . '/../web/assets',
-        ],
-        'urlManager' => [
-            'showScriptName' => true,
-        ],
-        'request' => [
-            'cookieValidationKey' => 'test',
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=127.0.0.1;dbname=http_files_test;port=8889',
+            'username' => 'root',
+            'password' => 'root',
+            'charset' => 'utf8',
         ],
     ],
 ];
