@@ -1,10 +1,18 @@
 <h1>REST API for working with file system</h1>
 
-<h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/blob/master/api/README.md#install-1">Install</a></h4>
-   
+<br />
+<h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#install-1">Install</a></h4>
+<h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#running-the-tests-1">Running the tests</a></h4>
+
+<h5>
+<a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#thoughts-1">#thoughts</a>
+</h5>
+<br />
+
 <h3>Requirements</h3>
 Apache(ngnix) , MySQL >= 5.6 , PHP >= 5.6 , GIT , <a href="https://getcomposer.org/download">Composer</a> , <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced</a> , <a href="http://guzzlephp.org/">guzzlehttp</a>
 
+<br /><br />
 <h3>List of the supported HTTP methods</h3>
 
 <b>1)</b> Upload the file and make record in table
@@ -39,14 +47,12 @@ OPTIONS http://localhost/v1/file-lists/_ID_
 GET http://localhost/v1/file-lists
 </pre>
 
-
+<br />
 <h2>INSTALL</h2>
 
 ```
 Install Composer 
-<pre>
 curl -sS https://getcomposer.org/installer | php
-</pre>
 
 1) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
 
@@ -68,7 +74,9 @@ the migration files are in /console/migrations
 8) create file /api/runtime/logs/rest.log
 ```
 
+<br />
 SQL dump:
+
 ```
 CREATE TABLE `file_list` (
 	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT, 
@@ -90,9 +98,10 @@ CREATE TABLE `test_file_list` (
 ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci COMMENT = 'List of files';
 ```
 
+<br />
 <h3>Running the tests</h3>
 
-Codeception - acceptance type.
+Codeception - acceptance type.<br />
 Configurate the file /common/config/test-local.php (install test database). 
 
 After 
@@ -106,7 +115,7 @@ After
 </pre>
 
 
-2) 
+2)
 <pre>
 ./vendor/bin/codecept build
 </pre>
@@ -119,7 +128,7 @@ After
 
 
 <hr />
-
+<br />
 <i><h5>#thoughts</h5></i>
 
 In my opinion the following items are important (in order of priority): 
