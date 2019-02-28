@@ -1,7 +1,14 @@
 <h1>REST API for working with file system</h1>
 
+<br /><br />
 <h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/blob/master/api/README.md#install-1">Install</a></h4>
-   
+<h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#running-the-tests">Running the tests</a></h4>
+
+<h4>
+<a href="https://github.com/andreivadimovich/yii2-app-advanced/tree/master/api#thoughts">Running the tests</a>
+</h4>
+<br /><br />
+
 <h3>Requirements</h3>
 Apache(ngnix) , MySQL >= 5.6 , PHP >= 5.6 , GIT , <a href="https://getcomposer.org/download">Composer</a> , <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced</a> , <a href="http://guzzlephp.org/">guzzlehttp</a>
 
@@ -106,7 +113,7 @@ After
 </pre>
 
 
-2) 
+2)
 <pre>
 ./vendor/bin/codecept build
 </pre>
