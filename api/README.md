@@ -3,7 +3,7 @@
 <h4><a href="https://github.com/andreivadimovich/yii2-app-advanced/blob/master/api/README.md#install-1">Install</a></h4>
    
 <h3>Requirements</h3>
-Apache(ngnix) / MySQL >= 5.6 / PHP >= 5.6 / GIT / <a href="https://getcomposer.org/download">Composer</a> / <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced (+ guzzlehttp/guzzle)</a>
+Apache(ngnix) , MySQL >= 5.6 , PHP >= 5.6 , GIT , <a href="https://getcomposer.org/download">Composer</a> , <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced</a> , guzzlehttp
 
 <h3>List of the supported HTTP methods</h3>
 
@@ -51,9 +51,7 @@ curl -sS https://getcomposer.org/installer | php
 1) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
 
 2) add line 
-<pre>
 "guzzlehttp/guzzle": "^6.2"
-</pre>
 to your /project/path/composer.json 
 
 3) /project/path  php composer.phar update 
