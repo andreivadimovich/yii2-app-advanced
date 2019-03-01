@@ -58,22 +58,18 @@ curl -sS https://getcomposer.org/installer | php
 ```
 1) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
 
-2) add line 
-"guzzlehttp/guzzle": "^6.2"
-to your /project/path/composer.json 
+2) /project/path  php composer.phar update 
 
-3) /project/path  php composer.phar update 
+3) /project/path php init 
 
-4) /project/path php init 
+4) set up a database connection /common/config/main-local.php 
 
-5) set up a database connection /common/config/main-local.php 
-
-6) /project/path php migrate up (if it doesn’t work – the data base dump is provided below in this document) 
+5) /project/path php migrate up (if it doesn’t work – the data base dump is provided below in this document) 
 the migration files are in /console/migrations
 
-7) create directory /api/web/file_list (chmod 777 to a folder and all contents)
+6) create directory /api/web/file_list (chmod 777 to a folder and all contents)
 
-8) create file /api/runtime/logs/rest.log
+7) create file /api/runtime/logs/rest.log
 ```
 
 <br />
