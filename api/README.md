@@ -50,24 +50,19 @@ GET http://localhost/v1/file-lists
 <br />
 <h2>INSTALL</h2>
 
-Install Composer 
 ```
-curl -sS https://getcomposer.org/installer | php
-```
+1) Install Composer - curl -sS https://getcomposer.org/installer | php
 
-```
-1) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
+2) git clone https://github.com/andreivadimovich/yii2-app-advanced.git
 
-2) /project/path  php composer.phar update 
+3) /project/path  php composer.phar update 
 
-3) /project/path php init 
+4) /project/path php init 
 
-4) set up a database connection /common/config/main-local.php 
+5) set up a database connection /common/config/main-local.php 
 
-5) /project/path php migrate up (if it doesn’t work – the data base dump is provided below in this document) 
+6) /project/path php migrate up (if it doesn’t work – the data base dump is provided below in this document) 
 the migration files are in /console/migrations
-
-6) create directory /api/web/file_list (chmod 777 to a folder and all contents)
 
 7) create file /api/runtime/logs/rest.log
 ```
