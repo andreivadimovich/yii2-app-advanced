@@ -1,4 +1,5 @@
-<h1>REST API for working with file system</h1>
+<h1>API for working with file system</h1>
+<i>* it's not REST, don't use (unfinished)</i>
 
 <br />
 <h4><a href="#install-1">Install</a></h4>
