@@ -1,5 +1,7 @@
 <h1>API for working with file system</h1>
-<i>* it's not REST, don't use (unfinished)</i>
+<i>* it's not REST, don't use (unfinished) <br/>
+#TODO modify in free time
+</i>
 
 <br />
 <h4><a href="#install-1">Install</a></h4>
