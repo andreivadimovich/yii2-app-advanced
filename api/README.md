@@ -13,7 +13,8 @@
 <br />
 
 <h3>Requirements</h3>
-Apache(ngnix) , MySQL >= 5.6 , PHP >= 5.6 , GIT , <a href="https://getcomposer.org/download">Composer</a> , <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced</a> , <a href="http://guzzlephp.org/">guzzlehttp</a>
+Ngnix, MySQL >= 5.6 , PHP >= 7 , GIT , <a href="https://getcomposer.org/download">Composer</a> , <a href="https://github.com/yiisoft/yii2-app-advanced">YII2-advanced</a> , <a href="http://guzzlephp.org/">guzzlehttp</a> (<i>
+if you need to use tests</i>)
 
 <br /><br />
 <h3>List of the supported HTTP methods</h3>
